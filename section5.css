@@ -1,0 +1,95 @@
+#section5{
+    background-image: url(./img/breathtaking-4k-galaxy-wallpaper-a3qjl9atd2ku58vt.jpg);   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;     
+    word-break: normal;
+    font-family: 'Bitcount Single';
+    color: aliceblue;
+    min-height: 100vh;
+}
+.bg-layout5{
+    background-color: rgba(0, 0, 0, 0.50);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.layout5{
+    display: grid;
+    min-height: fit-content;
+    grid-template-columns: repeat(3, 3fr);  
+    grid-template-rows: repeat(1, 300px); 
+    justify-items: center; 
+    align-self: center;
+}
+h2{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: brown;
+    animation: 0.5s yes ease-in-out infinite;
+    animation-direction: alternate;
+}
+@keyframes yes{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+.first{
+    margin: 10px;
+    grid-row: 1/2;
+    grid-column: 1/2; 
+    justify-items: center;
+    align-items: center;
+}
+.mystreet{
+    padding: 10px;
+    margin: 10px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px; 
+}
+.tired{
+    padding: 10px;
+    grid-row: 1/2;
+    grid-column: 2/3;     
+}
+#section5 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.ad{
+    padding: 10px;
+    height: 75%;
+    grid-row: 1/2;
+    grid-column: 3/4;  
+}
+@media screen and (max-width:1000px){
+    .layout5{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  
+        grid-template-rows: repeat(3, 350px); 
+        justify-items: center; 
+        align-items: center;
+    }
+    .first{
+        margin: 10px;
+        grid-row: 1/2;
+        grid-column: 1/2; 
+    } 
+    .tired{
+        grid-row: 2/3;
+        grid-column: 1/2;     
+    } 
+    .ad{
+        margin: 10px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        grid-row: 3/4;
+        grid-column: 1/2;  
+    } 
+}

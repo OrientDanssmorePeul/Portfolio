@@ -1,0 +1,67 @@
+.section1{
+    background-image: url("./img/breathtaking-4k-galaxy-wallpaper-a3qjl9atd2ku58vt.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Bebas Neue';
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.bg-layout{
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
+    min-height: 100vh;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blocks {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+.blocks span {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.30);
+    animation: float linear infinite;
+}
+.blocks span:nth-child(1) { top: 80%; left: 10%; animation-duration: 8s; }
+.blocks span:nth-child(2) { top: 60%; left: 50%; animation-duration: 12s; }
+.blocks span:nth-child(3) { top: 40%; left: 80%; animation-duration: 7s; }
+.blocks span:nth-child(4) { top: 20%; left: 20%; animation-duration: 15s; }
+.blocks span:nth-child(5) { top: 90%; left: 5%; animation-duration: 20s; }
+.blocks span:nth-child(6) { top: 70%; left: 15%; animation-duration: 9s; }
+.blocks span:nth-child(7) { top: 55%; left: 90%; animation-duration: 17s; }
+.blocks span:nth-child(8) { top: 32%; left: 62%; animation-duration: 11s; }
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; }
+}
+.top-nav{
+    padding: 15px;
+    background-image: linear-gradient(to left, white, gray, silver);
+    display: flex;
+    justify-content: space-around;
+    border: 2.5px solid black;
+    font-size: 17.5px;
+    border-radius: 0px 0px 20px 20px;
+}
+.section1-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+

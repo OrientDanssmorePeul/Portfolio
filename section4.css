@@ -1,0 +1,117 @@
+.section4{
+    background-image: url(./img/breathtaking-4k-galaxy-wallpaper-a3qjl9atd2ku58vt.jpg);   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;     
+    word-break: normal;
+    font-family: 'Bitcount Single';
+    color: aliceblue;
+    min-height: 100vh;
+}
+.bg-layout4{
+    background-color: rgba(0, 0, 0, 0.50);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descp4{
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, white, gray, silver);
+    text-align: center;
+    color: black;
+}
+.text-center{
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, white, gray, silver);
+    color: black;
+}
+.imageCaraseul {
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+.imageCaraseul img{
+    border-radius: 20px;
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    object-fit: cover;
+    opacity: 0;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+.imageCaraseul img:nth-child(1){ animation-name: slide1;}
+.imageCaraseul img:nth-child(2){ animation-name: slide2;}                 
+.imageCaraseul img:nth-child(3){ animation-name: slide3;}
+
+@keyframes slide1 {
+  0%, 30% {
+    transform: translateX(0) scale(1); /*2.7s*/
+    opacity: 1;
+    z-index: 3;
+  }                                                          /*0.3s*/
+  33.33%, 66.66% {
+    transform: translateX(-100%) scale(0.8); /*3s*/
+    opacity: 0.5;
+    z-index: 2;
+  }                                                           /*0.3s*/
+  70%, 100% {
+    transform: translateX(100%) scale(0.8);    /*2.7s*/
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
+
+@keyframes slide2 {
+  0%, 30% {
+    transform: translateX(100%) scale(0.8);      /*2.7s*/  
+    opacity: 0.5;
+    z-index: 1;
+  }                                                /*0.3s*/
+  33.33%, 66.66% {
+    transform: translateX(0) scale(1);             /*3s*/
+    opacity: 1;
+    z-index: 3;
+  }                                               /*0.3s*/
+  70%, 100% {
+    transform: translateX(-100%) scale(0.8);       /*2.7s*/  
+    opacity: 0.5;
+    z-index: 2;
+  }
+}
+
+@keyframes slide3 {
+  0%, 30% {
+    transform: translateX(-100%) scale(0.8);      /*2.7s*/ 
+    opacity: 0.5;
+    z-index: 2;
+  }                                                 /*0.3s*/
+  33.33%, 66.66% {
+    transform: translateX(100%) scale(0.8);     /*3s*/
+    opacity: 0.5;
+    z-index: 1;
+  }                                             /*0.3s*/
+  70%, 100% {
+    transform: translateX(0) scale(1);           /*2.7s*/ 
+    opacity: 1;
+    z-index: 3;
+  }
+}
+@media screen and (max-width:1000px ){
+  .imageCaraseul img {
+      width: 250px;
+    }
+}
