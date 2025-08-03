@@ -4,7 +4,17 @@ footer{
     min-height: 5vh;
 
 }
-.skibidi{
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.first-first{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.first-two{
     display: flex;
     margin-right: 20px;
     flex-direction: row;
@@ -12,23 +22,14 @@ footer{
     align-items: center;
     gap: 10px;
 }
-.yo{
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-}
-.hey{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 hr{
     display: flex;
     justify-self: center;
     width: 97.5%;
 }
 @media screen and (max-width:475px){
-    .yo ,.skibidi{
+    .first-first ,.first-two{
         font-size: 10px;
     }
 }

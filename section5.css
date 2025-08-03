@@ -71,7 +71,7 @@ h2{
     .layout5{
         display: grid;
         grid-template-columns: repeat(1, 1fr);  
-        grid-template-rows: repeat(3, 350px); 
+        grid-template-rows: repeat(3, auto); 
         justify-items: center; 
         align-items: center;
     }
